@@ -1,8 +1,25 @@
 aid: scentbird
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scentbird.png
 name: ScentBird
-description: ScentBird is a company surfaced as a portfolio company of 500-global, y-combinator and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Scentbird is a New York City-based monthly fragrance subscription service, founded in 2014
+  and backed by 500 Global and Y Combinator. Members receive a travel-size (8ml) designer fragrance
+  each month for a flat subscription fee, selecting from a rotating catalog of hundreds of designer and
+  niche perfume and cologne brands, and can also purchase full-size bottles, candles, and beauty products
+  through the direct-to-consumer storefront. Scentbird operates as a consumer e-commerce and subscription
+  brand; its public engineering presence is a GitHub organization of internal tooling and open-source
+  forks (data-integration taps, shipping-API clients, Grails plugins), and it does not currently publish
+  a public developer API, OpenAPI specification, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/scentbird/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fragrance
+- Perfume
+- Subscription
+- E-Commerce
+- Beauty
+- Consumer
+- Direct-to-Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scentbird-domain-security.yml
 - type: Website
   url: https://scentbird.com
+- type: GitHubOrganization
+  url: https://github.com/scentbird
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
